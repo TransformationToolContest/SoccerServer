@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated soccerpitch -->
+      <package
+            uri="http://www.transformation-tool-contest.eu/soccerpitch/1.0"
+            class="soccerpitch.SoccerpitchPackage"
+            genModel="model/soccerpitch.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated updatemodel -->
+      <package
+            uri="http://www.transformation-tool-contest.eu/updatemodel/1.0"
+            class="updatemodel.UpdatemodelPackage"
+            genModel="model/updatemodel.genmodel"/>
+   </extension>
+
+</plugin>

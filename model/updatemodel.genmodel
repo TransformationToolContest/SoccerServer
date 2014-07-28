@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/SoccerServer/src" modelPluginID="SoccerServer"
+    modelName="Updatemodel" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>updatemodel.ecore</foreignModel>
+  <genPackages prefix="Updatemodel" disposableProviderFactory="true" ecorePackage="updatemodel.ecore#/">
+    <genClasses ecoreClass="updatemodel.ecore#//Update">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference updatemodel.ecore#//Update/actions"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="updatemodel.ecore#//Action">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference updatemodel.ecore#//Action/player"/>
+    </genClasses>
+    <genClasses ecoreClass="updatemodel.ecore#//Player">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute updatemodel.ecore#//Player/number"/>
+    </genClasses>
+    <genClasses ecoreClass="updatemodel.ecore#//MovePlayer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute updatemodel.ecore#//MovePlayer/xDist"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute updatemodel.ecore#//MovePlayer/yDist"/>
+    </genClasses>
+    <genClasses ecoreClass="updatemodel.ecore#//ShootBall">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute updatemodel.ecore#//ShootBall/xDist"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute updatemodel.ecore#//ShootBall/yDist"/>
+    </genClasses>
+    <genClasses ecoreClass="updatemodel.ecore#//DropBall"/>
+  </genPackages>
+</genmodel:GenModel>
